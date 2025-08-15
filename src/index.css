@@ -6,8 +6,8 @@
 
 @layer base {
   :root {
-    /* Dark theme base colors */
-    --background: 240 10% 3.9%;
+    /* Dark theme base colors - quase preto */
+    --background: 0 0% 4%;
     --foreground: 0 0% 98%;
     
     /* Card components */
@@ -123,7 +123,6 @@
 
   body {
     @apply bg-background text-foreground;
-    background: var(--gradient-primary);
     min-height: 100vh;
   }
 }
