@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo e descrição */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-gradient mb-4">Cass.io</h3>
+            <h3 className="font-poppins text-2xl font-bold text-gradient mb-4">Cass.io</h3>
             <p className="text-muted-foreground mb-6 max-w-md">
               Transformamos pequenas e médias empresas em líderes digitais através
               de soluções tecnológicas inteligentes e inovadoras.

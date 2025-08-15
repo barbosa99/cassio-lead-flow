@@ -34,9 +34,9 @@ export const ClientsSection = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-poppins text-3xl md:text-5xl font-bold mb-6">
             Empresas que
-            <span className="text-gradient"> confiam</span> em nós
+            <span className="font-poppins text-gradient"> confiam</span> em nós
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Veja o que nossos clientes falam sobre os resultados alcançados 
@@ -92,7 +92,7 @@ export const ClientsSection = () => {
         {/* CTA secundário */}
         <div className="text-center mt-16">
           <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-white/10">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="font-poppins text-2xl md:text-3xl font-bold mb-4">
               Junte-se a nova era digital
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
