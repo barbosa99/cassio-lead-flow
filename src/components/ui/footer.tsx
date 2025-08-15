@@ -10,12 +10,12 @@ export const Footer = () => {
   return (
     <footer className="bg-background/95 backdrop-blur-sm border-t border-white/10">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Logo e descrição */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-gradient mb-4">Cass.io</h3>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Transformamos pequenas e médias empresas em líderes digitais através 
+              Transformamos pequenas e médias empresas em líderes digitais através
               de soluções tecnológicas inteligentes e inovadoras.
             </p>
             <div className="flex gap-4">
@@ -32,7 +32,7 @@ export const Footer = () => {
           </div>
 
           {/* Soluções */}
-          <div>
+          {/* <div>
             <h4 className="font-bold mb-4">Soluções</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Automação de Processos</a></li>
@@ -41,7 +41,7 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-colors">Integração de Sistemas</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Consultoria Digital</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contato */}
           <div>
@@ -49,23 +49,29 @@ export const Footer = () => {
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>contato@cass.io</span>
+                <span>contato.vitorbarbosa@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+55 (11) 9999-9999</span>
+                <span>+55 (31) 99104-7829</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>São Paulo, SP</span>
+                <span>Belo Horizonte, MG</span>
               </div>
             </div>
-            
-            <Button 
+
+            <Button
               className="mt-6 w-full shadow-primary"
-              onClick={scrollToForm}
+              asChild
             >
-              Falar com Especialista
+              <a
+                href="https://wa.me/5531991047829?text=Olá,%20quero%20falar%20com%20um%20especialista"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Falar com Especialista
+              </a>
             </Button>
           </div>
         </div>
@@ -81,8 +87,8 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-colors">Imprensa</a></li>
             </ul>
           </div> */}
-          
-          {/* <div>
+
+        {/* <div>
             <h5 className="font-bold mb-3">Suporte</h5>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda</a></li>

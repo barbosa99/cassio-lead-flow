@@ -9,8 +9,16 @@ export const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      {/* Background overlay gradiente sobre fundo escuro */}
-      <div className="absolute inset-0 bg-gradient-hero"></div>
+      
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Technology background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-hero"></div>
+      </div>
+      
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
