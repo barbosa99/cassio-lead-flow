@@ -24,14 +24,14 @@ export const AboutSection = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-poppins text-3xl md:text-5xl font-bold mb-6">
             Por que escolher a 
-            <span className="text-gradient"> Cass.io</span>?
+            <span className="font-poppins text-gradient"> Cass.io</span>?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Centenas de empresas modernizando seus negócios com soluções digitais. 
             <br/>
-            Comece hoje a sua transformação..
+            Comece hoje a sua transformação.
           </p>
         </div>
 

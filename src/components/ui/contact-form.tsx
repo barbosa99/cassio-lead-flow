@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, Building, User } from "lucide-react";
+import emailjs from "emailjs-com";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -22,15 +23,24 @@ export const ContactForm = () => {
     setIsLoading(true);
 
     try {
-      // Simulação de integração com Mailchimp
-      // Em produção, você substituiria por sua API key e endpoint do Mailchimp
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      await emailjs.send(
+        "service_lk3m8rs",   // substitua pelo seu Service ID
+        "template_rotuper",  // substitua pelo seu Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        "3lp3e4MkaL_SMpzLE"    // substitua pela sua Public Key
+      );
+
       toast({
         title: "Sucesso!",
         description: "Seus dados foram enviados. Entraremos em contato em até 24h!",
       });
-      
+
       setFormData({
         name: "",
         email: "",
@@ -60,9 +70,8 @@ export const ContactForm = () => {
     <section id="contact-form" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Pronto para 
-            <span className="text-gradient"> transformar</span> seu negócio?
+          <h2 className="font-poppins text-3xl md:text-5xl font-bold mb-6">
+            Pronto para <span className="text-gradient">transformar</span> seu negócio?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Preencha o formulário e receba uma consultoria gratuita personalizada 
@@ -170,6 +179,7 @@ export const ContactForm = () => {
             <p className="text-sm text-muted-foreground">LGPD compliant</p>
           </div>
         </div>
+
       </div>
     </section>
   );
