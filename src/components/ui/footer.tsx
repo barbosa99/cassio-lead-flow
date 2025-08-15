@@ -44,7 +44,7 @@ export const Footer = () => {
           </div> */}
 
           {/* Contato */}
-          <div>
+          <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-white/10">
             <h4 className="font-bold mb-4">Contato</h4>
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -112,10 +112,12 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-white/10">
           <p className="text-muted-foreground text-sm">
-            © 2024 Cass.io. Todos os direitos reservados.
+            © 2025 Cass.io. Todos os direitos reservados.
           </p>
-          <p className="text-muted-foreground text-sm mt-4 md:mt-0">
-            Desenvolvido com ❤️ para PMEs brasileiras
+          <p className="text-muted-foreground text-sm mt-4 text-center lg:text-right">
+            Desenvolvido por Vitor Barbosa de Souza. <br />
+            Essa empresa é uma homenagem ao legado de seu pai <br />
+            <b>Cassio Barbosa de Souza</b>.
           </p>
         </div>
       </div>
