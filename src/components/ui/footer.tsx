@@ -71,7 +71,7 @@ export const Footer = () => {
         </div>
 
         {/* Links úteis */}
-        <div className="grid md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/10">
+        {/* <div className="grid md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/10">
           <div>
             <h5 className="font-bold mb-3">Empresa</h5>
             <ul className="space-y-2 text-muted-foreground">
@@ -80,9 +80,9 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Imprensa</a></li>
             </ul>
-          </div>
+          </div> */}
           
-          <div>
+          {/* <div>
             <h5 className="font-bold mb-3">Suporte</h5>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda</a></li>
@@ -101,7 +101,7 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-colors">Cookies</a></li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-white/10">

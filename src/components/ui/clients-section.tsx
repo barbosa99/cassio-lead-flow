@@ -93,7 +93,7 @@ export const ClientsSection = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-white/10">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Junte-se a mais de 500 empresas satisfeitas
+              Junte-se a nova era digital
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Não perca tempo com soluções que não funcionam. 

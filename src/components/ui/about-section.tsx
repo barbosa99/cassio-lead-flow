@@ -5,8 +5,8 @@ export const AboutSection = () => {
   const features = [
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
-      title: "Automação Inteligente",
-      description: "Automatize processos complexos e reduza custos operacionais em até 60%"
+      title: "Agilidade",
+      description: "Lançamento de soluções em tempo recorde, sem comprometer a qualidade"
     },
     {
       icon: <Shield className="w-8 h-8 text-secondary" />,
@@ -29,8 +29,9 @@ export const AboutSection = () => {
             <span className="text-gradient"> Cass.io</span>?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mais de 500 PMEs já transformaram seus negócios com nossas soluções. 
-            Seja o próximo a alcançar resultados extraordinários.
+            Centenas de empresas modernizando seus negócios com soluções digitais. 
+            <br/>
+            Comece hoje a sua transformação..
           </p>
         </div>
 
